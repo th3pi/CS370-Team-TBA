@@ -15,8 +15,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Course newCourse = new Course("CSCI370", "Fall2020", "CompSci", "Bon Sy");
-        CourseUtils courseUtils = new CourseUtils();
-        courseUtils.addCourse(newCourse);
     }
 }
