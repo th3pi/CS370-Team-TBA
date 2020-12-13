@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678261066402",
+    "project_id": "collegehub-a6850",
+    "storage_bucket": "collegehub-a6850.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678261066402:android:ce502b1b09d9e47d8fa5fb",
+        "android_client_info": {
+          "package_name": "com.compsci.collegehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678261066402-j1ttstbm2al8hbqph9p3ek8h33694sdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPJZCaV7U71Sg0eX0ab55DtCv7rgo9RkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678261066402-j1ttstbm2al8hbqph9p3ek8h33694sdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
