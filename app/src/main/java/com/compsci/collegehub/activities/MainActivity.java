@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MaterialToolbar topAppBar = findViewById(R.id.topAppBar);
-
+        
     }
 }
