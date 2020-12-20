@@ -91,7 +91,7 @@ Brief description of all the components in the app
 
 ## Zip File Description
 
-See the [open issues](https://github.com/roshanlam/ReadMeTemplate/issues) for a list of proposed features (and known issues).
+Description of all the different directories and files in our zip submission
 
 ```bash
 ├───.gradle // Gradle Build files
