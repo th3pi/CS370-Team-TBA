@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="4dp"
                 android:paddingVertical="8dp"
-                android:text="cs.qc.cuny.edu/sy.html" />
+                android:text="bon.sy@qc.cuny.edu" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="4dp"
                 android:paddingVertical="8dp"
-                android:text="bon.sy@qc.cuny.edu" />
+                android:text="cs.qc.cuny.edu/sy.html" />
         </androidx.cardview.widget.CardView>
         <TextView
             android:id="@+id/scheduleTitleText"

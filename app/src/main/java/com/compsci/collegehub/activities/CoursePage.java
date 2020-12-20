@@ -13,6 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.compsci.collegehub.R;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -24,7 +25,7 @@ import utils.ProfessorUtil;
 
 public class CoursePage extends AppCompatActivity {
     private Course course;
-    private CourseUtils courseUtils = new CourseUtils();
+    private Professor professor;
     private ProgressBar pBar;
     private CollapsingToolbarLayout toolBarLayout;
     @Override
@@ -40,16 +41,42 @@ public class CoursePage extends AppCompatActivity {
         initializeCourseDetails();
     }
 
+    /**
+     * Retrieves course details from Firestore
+     */
     private void initializeCourseDetails(){
-        courseUtils.getCourse("CSCI370").get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+        new CourseUtils().getCourse("CSCI370").get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 course = documentSnapshot.toObject(Course.class);
-                assert course != null;
-                pBar.setVisibility(View.INVISIBLE);
-                toolBarLayout.setVisibility(View.VISIBLE);
-                toolBarLayout.setTitle(course.getName());
+                assert course != null; // Don't execute next lines if course object is null
+
+                // Retrieve professor details from Firestore
+                new ProfessorUtil().getProfessor(course.getInstructorEmail()).addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        professor = documentSnapshot.toObject(Professor.class);
+                        assert course != null;
+                        pBar.setVisibility(View.INVISIBLE);
+                        toolBarLayout.setVisibility(View.VISIBLE);
+                        toolBarLayout.setTitle(course.getName());
+                        populateProfessorFields();
+                    }
+                });
             }
         });
+    }
+
+    /**
+     * Populates professor details textviews
+     */
+    private void populateProfessorFields(){
+        TextView profName = (TextView) findViewById(R.id.profName);
+        TextView profEmail = (TextView) findViewById(R.id.profEmailText);
+        TextView profWebsite = (TextView) findViewById(R.id.profWebText);
+
+        profName.setText(professor.getName());
+        profEmail.setText(professor.getEmail());
+        profWebsite.setText(professor.getWebsite());
     }
 }
