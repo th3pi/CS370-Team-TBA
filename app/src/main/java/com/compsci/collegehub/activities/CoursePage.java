@@ -24,13 +24,15 @@ public class CoursePage extends AppCompatActivity {
     private Course course;
     private CourseUtils courseUtils = new CourseUtils();
     private ProgressBar pBar;
+    private CollapsingToolbarLayout toolBarLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        CollapsingToolbarLayout toolBarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
+        toolBarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
+        toolBarLayout.setVisibility(View.INVISIBLE);
         pBar = findViewById(R.id.coursePageProgressBar);
         pBar.setVisibility(View.VISIBLE);
         initializeCourseDetails();
@@ -43,7 +45,8 @@ public class CoursePage extends AppCompatActivity {
                 course = documentSnapshot.toObject(Course.class);
                 assert course != null;
                 pBar.setVisibility(View.INVISIBLE);
-                Log.d("COUSRSE", "onCreate: GOT COURSE " + course.getInstructor());
+                toolBarLayout.setVisibility(View.VISIBLE);
+                toolBarLayout.setTitle(course.getName());
             }
         });
     }
