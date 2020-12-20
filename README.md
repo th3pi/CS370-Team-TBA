@@ -151,13 +151,15 @@ Details about the team members and how work was divided is described below:
 
   - [x] Signed Tanjimul H. Bhuiyan 12/20/2020
 2. Matthew Rodriguez
-> I, Matthew rodriguez, certify that my temmates have all worked hard on this project and were a pleasure to work with. Not being able to work with them in person made it a bit difficult, but it was still a good experience.
-
-- [x] Signed Matthew Rodriguez 12/20/2020
-3. Carlos Aucacama
 > Honor statement here
 
 - [ ] Not yet signed
+3. Carlos Aucacama
+> I, Carlos Aucacama, certify that my team provided me with an experience unlike one that I would've experience working on this project alone. I have learned 
+  alot from all of them as a collective group. The only aspect that was missing was the face to face interaction, given the fact that it this is my first major 
+  coding project it was challenging but not impossible. So I'd like to thank them for the opporunity to be apert of this team.
+
+- [x] Signed by Carlos Aucacama 12/20/2020
 4. Joseph Cabrera
 > I, Joseph Cabrera, certify that my teammates were exactly the kind of people for the job, and without them I would not have been able to have this experience or come close to this level of completion. The lack of face-to-face communication, as much of a drawback as it was, did not stop them from contributing their hardest to the tasks at hand. I hope to work with them again on future projects. 
 
