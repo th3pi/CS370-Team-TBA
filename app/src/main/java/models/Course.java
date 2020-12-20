@@ -1,13 +1,13 @@
 package models;
 
 public class Course{
-    private String name, semester, designation, instructor;
+    private String name, semester, designation, instructorEmail;
 
-    public Course(String name, String semester, String designation, String instructor) {
+    public Course(String name, String semester, String designation, String instructorEmail) {
         this.name = name;
         this.semester = semester;
         this.designation = designation;
-        this.instructor = instructor;
+        this.instructorEmail = instructorEmail;
     }
     public Course(){
 
@@ -37,12 +37,12 @@ public class Course{
         this.designation = designation;
     }
 
-    public String getInstructor() {
-        return instructor;
+    public String getInstructorEmail() {
+        return instructorEmail;
     }
 
-    public void setInstructor(String instructor) {
-        this.instructor = instructor;
+    public void setInstructorEmail(String instructorEmail) {
+        this.instructorEmail = instructorEmail;
     }
 
 }
