@@ -149,7 +149,7 @@ Details about the team members and how work was divided is described below:
 1. Tanjimul H. Bhuiyan 
  > I, Tanjimul H. Bhuiyan, certify that my teammates have been a great resource to this project. They tried to contribute whenever necessary and in whatever ways possible. Their input, feedback and willingness to work on this project has made this entire experience a delight although I wish we could work on this project in-person because effective communication had become a major obstacle at one point. In any case, I would like to commend my teammates for their hardwork.
 
-  - [ ] Signed Tanjimul H. Bhuiyan 12/20/2020
+  - [x] Signed Tanjimul H. Bhuiyan 12/20/2020
 2. Matthew Rodriguez
 > Honor statement here
 
