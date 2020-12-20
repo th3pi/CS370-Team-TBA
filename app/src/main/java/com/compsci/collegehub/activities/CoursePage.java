@@ -50,7 +50,7 @@ public class CoursePage extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 course = documentSnapshot.toObject(Course.class);
                 assert course != null; // Don't execute next lines if course object is null
-
+                new CourseUtils().addCourseGradable(course, "Final Project", "Dec 20");
                 // Retrieve professor details from Firestore
                 new ProfessorUtil().getProfessor(course.getInstructorEmail()).addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
@@ -59,7 +59,7 @@ public class CoursePage extends AppCompatActivity {
                         assert course != null;
                         pBar.setVisibility(View.INVISIBLE);
                         toolBarLayout.setVisibility(View.VISIBLE);
-                        toolBarLayout.setTitle(course.getName());
+                        populateCourseFields();
                         populateProfessorFields();
                     }
                 });
@@ -78,5 +78,26 @@ public class CoursePage extends AppCompatActivity {
         profName.setText(professor.getName());
         profEmail.setText(professor.getEmail());
         profWebsite.setText(professor.getWebsite());
+    }
+
+    /**
+     * Populates course textviews
+     */
+    private void populateCourseFields(){
+        toolBarLayout.setTitle(course.getName());
+
+        TextView gIOne = (TextView) findViewById(R.id.assignmentOneText);
+        TextView gIOneDue = (TextView) findViewById(R.id.assignmentOneDueText);
+        TextView gITwo = (TextView) findViewById(R.id.assignmentTwoText);
+        TextView gITwoDue = (TextView) findViewById(R.id.assignmentTwoDueText);
+        TextView gIThree = (TextView) findViewById(R.id.assignmentThreeText);
+        TextView gIThreeDue = (TextView) findViewById(R.id.assignmentThreeDueText);
+        TextView gIFour = (TextView) findViewById(R.id.assignmentFourText);
+        TextView gIFourDue = (TextView) findViewById(R.id.assignmentFourDueText);
+
+        gIOneDue.setText(course.getGradableItems().get("Assignment 1").toString());
+        gITwoDue.setText(course.getGradableItems().get("Assignment 2").toString());
+        gIThreeDue.setText(course.getGradableItems().get("Assignment 3").toString());
+        gIFourDue.setText(course.getGradableItems().get("Final Project").toString());
     }
 }
