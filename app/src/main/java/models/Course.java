@@ -9,6 +9,9 @@ public class Course{
         this.designation = designation;
         this.instructor = instructor;
     }
+    public Course(){
+
+    }
 
     public String getName() {
         return name;
