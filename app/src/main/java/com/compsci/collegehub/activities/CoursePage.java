@@ -18,7 +18,9 @@ import com.compsci.collegehub.R;
 import com.google.firebase.firestore.DocumentSnapshot;
 
 import models.Course;
+import models.Professor;
 import utils.CourseUtils;
+import utils.ProfessorUtil;
 
 public class CoursePage extends AppCompatActivity {
     private Course course;
