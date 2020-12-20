@@ -25,6 +25,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.testfairy.TestFairy;
 
 import java.util.ArrayList;
 
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         CardView courseCard = (CardView) findViewById(R.id.course_card);
         Intent coursePageIntent = new Intent(this, CoursePage.class);
-
+        TestFairy.begin(this, "SDK-RdyibC2H");
         courseCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
