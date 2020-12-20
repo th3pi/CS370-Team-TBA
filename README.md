@@ -153,7 +153,7 @@ Details about the team members and how work was divided is described below:
 2. Matthew Rodriguez
 > I, Matthew rodriguez, certify that my temmates have all worked hard on this project and were a pleasure to work with. Not being able to work with them in person made it a bit difficult, but it was still a good experience.
 
-- [x] Not yet signed
+- [x] Signed Matthew Rodriguez 12/20/2020
 3. Carlos Aucacama
 > Honor statement here
 
