@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
-                android:text="TextView"
+                android:text="TuThu 10:45AM to 12PM"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/semesterName"
                 app:layout_constraintHorizontal_bias="0.036"
