@@ -159,7 +159,7 @@ Details about the team members and how work was divided is described below:
 
 - [ ] Not yet signed
 4. Joseph Cabrera
-> Honor statement here
+> I, Joseph Cabrera, certify that my teammates were exactly the kind of people for the job, and without them I would not have been able to have this experience or come close to this level of completion. The lack of face-to-face communication, as much of a drawback as it was, did not stop them from contributing their hardest to the tasks at hand. I hope to work with them again on future projects. 
 
-- [ ] Not yet signed
+- [x] Signed Joseph Cabrera 12/20/2020
 
