@@ -151,9 +151,9 @@ Details about the team members and how work was divided is described below:
 
   - [x] Signed Tanjimul H. Bhuiyan 12/20/2020
 2. Matthew Rodriguez
-> Honor statement here
+> I, Matthew rodriguez, certify that my temmates have all worked hard on this project and were a pleasure to work with. Not being able to work with them in person made it a bit difficult, but it was still a good experience.
 
-- [ ] Not yet signed
+- [x] Signed Matthew Rodriguez 12/20/2020
 3. Carlos Aucacama
 > I, Carlos Aucacama, certify that my team provided me with an experience unlike one that I would've experience working on this project alone. I have learned 
   alot from all of them as a collective group. The only aspect that was missing was the face to face interaction, given the fact that it this is my first major 
