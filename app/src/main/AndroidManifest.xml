@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CollegeHub">
+        <activity
+            android:name=".activities.CoursePage"
+            android:label="@string/title_activity_course_page"
+            android:theme="@style/Theme.CollegeHub.NoActionBar"
+            android:parentActivityName=".activities.MainActivity"></activity>
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
